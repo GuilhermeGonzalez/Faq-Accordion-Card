@@ -1,0 +1,217 @@
+
+:root {
+    /* Primary*/
+    /* Text*/
+    --dark-blue: hsl(238, 29%, 16%);
+    --soft-red: hsl(14, 88%, 65%);
+    /* Background gradient*/
+    --soft-violet: hsl(273, 75%, 66%);
+    --soft-blue: hsl(240, 73%, 65%);
+
+    /* Neutral*/
+    /* Text*/
+    --very-dark-gray: hsl(237, 12%, 33%);
+    --dark-gray: hsl(240, 6%, 50%);
+    /* Dividers*/
+    --light-gray: hsl(240, 5%, 91%);
+}
+
+* {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+
+    height: 100vh;
+    background-image:-webkit-gradient(linear, left top, right top, from(hsl(273, 75%, 66%)), to(hsl(240, 73%, 65%)));
+    background-image:-webkit-linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-image:-moz-linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-image: -o-linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+.card {
+    padding: 40px 0;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    border-radius: 10px;    
+
+    height: 400px;
+    width: 700px;
+    background: white;
+}
+
+.shadow {
+    -webkit-box-shadow: 0px 20px 15px -2px rgba(0, 0, 0, 0.4);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    0px 20px 15px -2px rgba(0, 0, 0, 0.4);  /* Firefox 3.5 - 3.6 */
+    box-shadow:         0px 20px 15px -2px rgba(0, 0, 0, 0.4);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  }
+
+#imagesContainer {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+
+.img0 {
+
+    width: 335px;
+    height: 400px;
+    object-fit: none;
+    object-position: 107% 60%;
+
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    z-index: 1;
+}
+
+.img1 {
+
+    width: 320px;
+    height: 275px;
+    object-fit: cover;
+    object-position: -65px 0px;
+    
+    
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    z-index: 2;
+}
+
+.img2 {
+   
+    position: absolute;
+
+    height: 130px;
+    width: 130px;
+
+    top: 141px;
+    left: -65px;
+    z-index: 3;
+}
+
+
+#info{
+    width: 80%;
+    display: inline;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: var(--dark-blue);
+}
+
+.question {
+    margin: 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bolder;
+    color: var(--dark-blue);
+    opacity: 0.7;
+    
+}
+
+.question span:hover{
+    color:var(--soft-red);
+    cursor: pointer;
+}
+
+.question > img {
+    cursor: pointer;
+}
+
+.showOrHide{
+    display: none;
+}
+
+.answer{
+    margin-top: -10px;
+    margin-bottom: 10px;
+    color: var(--dark-blue);
+    opacity: 0.6;
+}
+
+.blackout{
+    opacity: 1;
+}
+
+hr {
+    opacity: 0.5;
+}
+
+
+
+
+
+@media (max-width: 800px) {
+    body {
+        
+    }
+
+    .card {
+
+        display: flex;
+
+        height: 700px;
+        width: 400px;
+    }
+
+    #info {
+        margin-top: 40%;
+        height: 50%;
+        width: 85%;
+    }
+
+    .img0 {
+        content: url("./images/bg-pattern-mobile.svg");
+        
+        width: 275px;
+        height: 300px;
+        object-fit: contain;
+        object-position: 0% 0%;
+        position: absolute;
+
+        top: -40px;
+        left: 60px;
+        z-index: 1;
+    }
+    
+    .img1 {
+        content: url("./images/illustration-woman-online-mobile.svg");
+
+        
+        width: 320px;
+        height: 275px;
+        object-fit: contain;
+        object-position: 0% 0%;
+        
+        position: absolute;
+        top: -168px;
+        left: 18px;
+        z-index: 2;
+    }
+    
+    .img2 {
+        visibility: hidden;
+    }
+    
+    h2 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}

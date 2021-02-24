@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+ 
+</head>
+<body>
+  <div class="card shadow">
+    <div id="imagesContainer">
+      <img class="img0" src="./images/bg-pattern-desktop.svg" alt="pattern desktop">
+      <img class="img1" src="./images/illustration-woman-online-desktop.svg" alt="illustration woman online desktop">
+      <img class="img2" src="./images/illustration-box-desktop.svg" alt="illustration box desktop">
+    </div>
+    
+    <div id="info">
+      <h2>FAQ</h2>
+      <div class="question q1">
+        <span onclick="showAnswer(1)">How many team members can I invite?</span><img onclick="showAnswer(1)" class="arrow-icon" src="./images/icon-arrow-down.svg" alt="icon arrow down">
+      </div>
+      <div class="answer a1 showOrHide">
+        <p>Generic answer</p>
+      </div>
+      <hr>
+      <div class="question q2">
+        <span onclick="showAnswer(2)">What i the maximum file upload size?</span><img onclick="showAnswer(2)" class="arrow-icon" src="./images/icon-arrow-down.svg" alt="icon arrow down">
+      </div>
+      <div class="answer a2 showOrHide">
+        <p>Generic answer</p>
+      </div>
+      <hr>
+      <div class="question q3">
+        <span onclick="showAnswer(3)">How do I reset my password?</span><img onclick="showAnswer(3)" class="arrow-icon" src="./images/icon-arrow-down.svg" alt="icon arrow down">
+      </div>
+      <div class="answer a3 showOrHide">
+        <p>Generic answer</p>
+      </div>
+      <hr>
+      <div class="question q4">
+        <span onclick="showAnswer(4)">Can I cancel my subscription?</span><img onclick="showAnswer(4)" class="arrow-icon" src="./images/icon-arrow-down.svg" alt="icon arrow down">
+      </div>
+      <div class="answer a4 showOrHide">
+        <p>Generic answer</p>
+      </div>
+      <hr>
+      <div class="question q5">
+        <span onclick="showAnswer(5)">Do you provide additional support?</span><img onclick="showAnswer(5)" class="arrow-icon" src="./images/icon-arrow-down.svg" alt="icon arrow down">
+      </div>
+      <div class="answer a5 showOrHide">
+        <p>Generic answer</p>
+      </div>
+      <hr>
+      
+      
+      
+    </div>
+  </div>
+</body>
+
+<script src="./script.js">
+
+</script>
+</html>
